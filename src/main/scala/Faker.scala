@@ -6,7 +6,7 @@ final class Faker {
   def letterify(s: String): String = {
     s match {
       case ss: String ⇒ ss.replaceAll("[?]", chars(Random.nextInt(25)).toString)
-      case null ⇒ "" // this is proper way to do it. it is only for testing
+      case null ⇒ "" // this is not proper way to do it. it is only for testing
     }
 
   }
@@ -14,7 +14,7 @@ final class Faker {
   def numerify(s: String): String = {
     s match {
       case ss: String ⇒ ss.replaceAll("[#]", Random.nextInt(9).toString)
-      case null ⇒ "" // this is proper way to do it. it is only for testing
+      case null ⇒ "" // this is not proper way to do it. it is only for testing
     }
   }
 
