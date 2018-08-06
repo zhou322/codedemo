@@ -10,3 +10,5 @@ gen### Scala template
 *.class
 *.log
 
+project/target/
+target/
